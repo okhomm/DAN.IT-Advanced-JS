@@ -21,6 +21,7 @@ const getPosts = async () => {
             userPost.render();
             userPost.addDeleteListener();
 
+
           }
         });
       });

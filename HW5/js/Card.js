@@ -35,7 +35,17 @@ class Card {
     delButton.addEventListener("click", () => this.delete());
   }
 
-  delete() {
+  async delete() {
     this.htmlContainer.remove();
+
+    let deletePublication = await fetch(`https://ajax.test-danit.com/api/json/posts/${this.postId}`, {
+      method: "DELETE",
+    });
+    if (deletePublication.status === 200) {
+      this.htmlContainer.remove();
+    }
+
+
+
   }
 }
