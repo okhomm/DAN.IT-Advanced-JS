@@ -13,7 +13,7 @@ class Card {
     <div class="col">
       <div class="card h-100  mb-3">
         <div class="card-header border-info text-bg-info text-white">
-          <strong>${this.name}</strong>, ${this.email}, ${this.postId}
+          <strong>${this.name}</strong>, ${this.email}
         </div>
         <div class="card-body">
           <h5 class="card-title">${this.title}</h5>
